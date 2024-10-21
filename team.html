@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./layout/navbar.css">
+    <link rel="stylesheet" href="./layout/footer.css">
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+
+    <!-- ---------------------------------------Navbar ------------------------------------>
+    <nav>
+        <div id="navbar">
+            <script>
+             fetch("./layout/navbar.html")
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+                });
+            </script>
+        </div>
+</nav>
+
+
+
+<section id="team" class="team-section my-5">
+    <h2 class="text-center">Meet Our Team</h2>  
+
+    <div class="team-container">
+        <div class="team-card">
+            <div class="card">
+                <img src="data/aneesh_mittal.png" class="card-img-top" alt="Team Member 1">
+                <div class="card-body">
+                    <a href="people/aneesh_mittal.html"><h5 class="card-title">Aneesh Mittal</h5></a>
+                    <p class="card-text">Founder</p>
+                    <!-- <a href="profile1.html" class="arrow">→</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="team-card">
+            <div class="card">
+                <img src="data/rakesh_singh.jpeg" class="card-img-top" alt="Team Member 2">
+                <div class="card-body">
+                    <a href="people/rakesh_singh.html"><h5 class="card-title">Shri Rakesh Kumar</h5></a>
+                    <p class="card-text">Strategic Advisor</p>
+                    <!-- <a href="profile2.html" class="arrow">→</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="team-card">
+            <div class="card">
+                <img src="data/komal_mittal.png" class="card-img-top" alt="Team Member 3">
+                <div class="card-body">
+                    <a href="people/komal_mittal.html"><h5 class="card-title">Komal Mittal</h5></a>
+                    <p class="card-text">Associate</p>
+                    <!-- <a href="profile3.html" class="arrow">→</a> -->
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="team-container-2">
+        <div class="team-card">
+            <div class="card">
+                <img src="data/aneesh_mittal.png" class="card-img-top" alt="Team Member 1">
+                <div class="card-body">
+                    <a href="people/aneesh_mittal.html"><h5 class="card-title">Aneesh Mittal</h5></a>
+                    <p class="card-text">Founder</p>
+                    <!-- <a href="profile1.html" class="arrow">→</a> -->
+                </div>
+            </div>
+        </div>
+            
+        <div class="team-card">
+            <div class="card">
+                <img src="data/komal_mittal.png" class="card-img-top" alt="Team Member 3">
+                <div class="card-body">
+                    <a href="people/komal_mittal.html"><h5 class="card-title">Komal Mittal</h5></a>
+                    <p class="card-text">Associate</p>
+                    <!-- <a href="profile3.html" class="arrow">→</a> -->
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</section>
+
+
+
+    <!-- <section id="team" class="team-section my-5">
+
+        <h2 class="text-center ">Meet Our Team</h2>  
+        <div class="team-container">
+            <div class=""> 
+                <div class="card member">
+                    <img src="data/aneesh_mittal.png" class="card-img-top" alt="Team Member 1">
+                    <div class="card-body">
+                        <a href="people/aneesh_mittal.html"><h5 class="card-title">Aneesh Mittal</h5></a>
+                        <p class="card-text">Founder</p>
+                        <a href="profile1.html" class="arrow"></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card member">
+                    <img src="./data/rakesh_singh.jpeg" class="card-img-top" alt="Team Member 2">
+                    <div class="card-body ">
+                        <h5 class="card-title"><a href="./people/rakesh_singh.html">Shri Rakesh Kumar</a></h5>
+                        <p class="card-text">Strategic Advisor</p>
+                        <a href="profile2.html" class="arrow"></a> 
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card member">
+                    <img src="data/komal_mittal.png" class="card-img-top" alt="Team Member 3">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="./people/komal_mittal.html">Komal Mittal</a></h5>
+                        <p class="card-text">Associate</p>
+                        <a href="profile3.html" class="arrow"></a> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>  -->
+
+
+
+
+    <!------------------- Footer ------------------------------------>
+    <footer>
+        <div id="footer">
+            <script>
+             fetch('./layout/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                document.getElementById('footer').innerHTML = data;
+                });
+            </script>
+            </div>
+    
+    </footer>
+
+</body>
+</html>
